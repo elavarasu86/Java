@@ -7,12 +7,13 @@ class Vehicle {
 		System.out.println("Tuut, tuut!");
 	}
 }
-// Car class inherits vehicle class All the attributes and methods of Vehicle class will be available to Car class. 
+// Car class inherits vehicle classes attributes and methods. 
 public class Car extends Vehicle {
 	private String modelName = "Mustang";
 
 	public static void main(String[] args) {
 		Car myFastCar = new Car();
+		//Car class does not have Honk function as it inherit Vehicle class Honk function is available to Car class.
 		myFastCar.honk();
 		System.out.println(myFastCar.brand + " " + myFastCar.modelName);
 	}
