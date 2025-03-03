@@ -13,7 +13,8 @@ import com.elavarasu.learn_spring_framework.game.PacmanGame;
 @ComponentScan("com.elavarasu.learn_spring_framework.game")
 public class GamingAppLauncherApplication {
 	
-	/*
+	/*@Primary - A bean should be given preference when multiple condidates are qualified.
+	 *@Qualifier - A specific bean should be auto-wired(name of the bean can be used as qualifier)
 	 * As part of this step Let's add @Component to all the three games. 
 	 * 
 	 * Sprint will through error as we have three class with same type(GamingConsole).
